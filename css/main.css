@@ -1,6 +1,7 @@
-@import url("https://fonts.googleapis.com/css?family=Cormorant&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Cormorant:300i,400,400i&display=swap");
 @import url("https://fonts.googleapis.com/css?family=Cabin&display=swap");
 @import url("https://fonts.googleapis.com/css?family=Merriweather&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Lato:300,300i,400&display=swap");
 /*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
 /* Document
    ========================================================================== */
@@ -9,8 +10,8 @@
  * 2. Prevent adjustments of font size after orientation changes in iOS.
  */
 html {
-  font-family: "Cabin", sans-serif;
-  font-weight: 150;
+  font-family: "Lato", sans-serif;
+  font-weight: 300;
   line-height: 1.15;
   /* 1 */
   -webkit-text-size-adjust: 100%;
@@ -31,7 +32,7 @@ body {
  */
 main {
   display: block;
-  background-color: #e4e6e2;
+  background-color: rgba(228, 230, 226, 0.8);
 }
 
 /**
@@ -360,7 +361,56 @@ img {
 .container {
   width: 100%;
   max-width: 1440px;
-  margin: 0 auto;
+  margin: 1rem auto;
+}
+
+.container-grid {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 300px 1140px;
+  grid-template-columns: 300px 1140px;
+  -webkit-box-align: baseline;
+  -ms-flex-align: baseline;
+  align-items: baseline;
+}
+
+h1 {
+  font-family: "Cormorant", serif;
+  font-weight: 300;
+}
+
+.intro {
+  font-size: 3rem;
+}
+
+h2 {
+  font-family: "Cormorant", serif;
+  font-weight: 300;
+}
+
+.subtitle {
+  font-size: 2rem;
+  font-style: italic;
+  color: #cfb753;
+  line-height: 1.6rem;
+  padding-left: 2.7em;
+}
+
+.basic {
+  font-family: "Lato", sans-serif;
+  font-weight: 300;
+  color: #131210;
+  line-height: 1.85rem;
+  font-size: 1.45rem;
+  padding-right: 1.7em;
+}
+
+.news-title {
+  font-family: "Cormorant", serif;
+  font-style: italic;
+  font-size: 1.5rem;
+  line-height: 1.3rem;
+  color: #854d36;
 }
 
 .grid {
@@ -388,10 +438,6 @@ img {
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-}
-
-.hero-text {
-  font-family: "Cormorant", serif;
 }
 
 .main-nav {
