@@ -1,3 +1,6 @@
+body
+  background-color: lighten($main, 100%)
+
 h1
   font-family: $font-title
   font-weight: $font-light
@@ -10,23 +13,34 @@ h2
   font-weight: $font-light
 
 .subtitle
-  font-size: 2rem
-  font-style: italic
-  color: $secondary
+  font-size: 1rem
+  text-transform: uppercase
+  text-align: center
+  color: $text-secondary
   line-height: 1.6rem
-  padding-left: 2.7em
+  padding-right: 1em
+  letter-spacing: 1.1px
 
 .basic
   font-family: $font-body
   font-weight: $font-light
-  color: $black
-  line-height: 1.85rem
-  font-size: 1.45rem
-  padding-right: 1.7em
+  color: $text-main
+  line-height: 1.7rem
+  font-size: 1.4rem
 
 .news-title
-  font-family: $font-title
-  font-style: italic
-  font-size: 1.5rem
-  line-height: 1.3rem
-  color: $accent
+  font-family: $font-body
+  font-weight: $font-light
+  font-size: 1.45rem
+  color: $black
+  line-height: 0px
+
+.news-text
+  font-family: $font-body
+  font-weight: $font-light
+  color: lighten($black, 30%)
+  line-height: 1.5rem
+  font-size: 1rem
+
+.contact-info
+  padding-bottom: 6rem
